@@ -19,7 +19,15 @@ const routes = [
     path: "/dashboard",
     name: "dashboard",
     component: Home,
-  },  
+  }, 
+  {
+    meta: {
+      title: "Login",
+    },
+    path: "/login",
+    name: "login",
+    component: () => import("@/views/LoginView.vue"),
+  },
   {
     meta: {
       title: "Usuários",
